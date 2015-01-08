@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Russia",
+    "speaker": {
+      "name": "Fiona Hill",
+      "title": ""
+    },
+    "img": "image/SH_FionaHill2015.jpg",
+    "paragraphs":["The daughter of a British coal miner and a nurse grows up to leave England, earn a Ph.D. in history at Harvard and write books and articles about Russia's history, its future and the controversial personality who commands the current post-Communist nation."]
+  },
+  {
+    "title": "The Next 40 Years of U.S. Foreign Policy",
+    "speaker": {
+      "name": "Elizabeth Cobbs Hoffman",
+      "title": ""
+    },
+    "img": "image/SH_ElizabethCobbsHoffman2015.jpg",
+    "paragraphs":["Elizabeth Cobbs Hoffman, a San Diego professor who traces her career to best-selling western fiction writer Louis L'Amour, began a recent guest column on the Reuters website with \"History has no on-off buttons. Change is never instantaneous.\""]
+  },
+  {
+    "title": "The American Way of War",
+    "speaker": {
+      "name": "Dominic Tierney",
+      "title": ""
+    },
+    "img": "image/SH_DominicTierney2015.jpg",
+    "paragraphs":["Dominic Tierney is associate professor of political science, a senior fellow at the Foreign Policy Research Institute, and an official correspondent at The Atlantic.  He is the author of <em>The American Way of War:  Why We Struggle and How We Can Start Winning Again</em>."]
+  }
+]

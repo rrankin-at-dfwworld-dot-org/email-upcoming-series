@@ -1,0 +1,20 @@
+tr
+  td(align='center', valign='top')
+    // BEGIN COLUMNS //
+    table#templateColumns(border='0', cellpadding='0', cellspacing='0', width='100%')
+      tr
+        each column in data.columns
+          td.templateColumnContainer(align='center', valign='top', style='padding-top:20px;')
+            table(border='0', cellpadding='20', cellspacing='0', width='100%')
+              tr
+                td.leftColumnContent
+                  img.columnImage(src='#{ column.img }', style='max-width:160px;')
+              |                         
+              tr
+                td.leftColumnContent(valign='top')
+                  h2 !{ column.title }
+                  h3 !{ column.speaker.name }
+                  each paragraph in column.paragraphs
+                    p !{ paragraph }
+
+    // // END COLUMNS

@@ -1,0 +1,101 @@
+.templateColumnContainer
+{
+    width: 200px;
+}
+
+#templateColumns
+{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+.leftColumnContent
+{
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 150%;
+
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    text-align: left;
+
+    color: #505050;
+}
+
+.leftColumnContent a:link,
+.leftColumnContent a:visited,
+.leftColumnContent a .yshortcuts
+{
+    font-weight: normal;
+
+    text-decoration: underline;
+
+    color: #eb4102;
+}
+
+.centerColumnContent
+{
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 150%;
+
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    text-align: left;
+
+    color: #505050;
+}
+
+.centerColumnContent a:link,
+.centerColumnContent a:visited,
+.centerColumnContent a .yshortcuts
+{
+    font-weight: normal;
+
+    text-decoration: underline;
+
+    color: #eb4102;
+}
+
+.rightColumnContent
+{
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 150%;
+
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    text-align: left;
+
+    color: #505050;
+}
+
+.rightColumnContent a:link,
+.rightColumnContent a:visited,
+.rightColumnContent a .yshortcuts
+{
+    font-weight: normal;
+
+    text-decoration: underline;
+
+    color: #eb4102;
+}
+
+.leftColumnContent img,
+.rightColumnContent img
+{
+    display: inline;
+
+    max-width: 260px;
+    height: auto;
+}

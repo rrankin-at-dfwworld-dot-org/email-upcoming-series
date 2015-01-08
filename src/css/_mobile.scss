@@ -1,0 +1,68 @@
+@media only screen and (max-width: 600px), (max-device-width: 420px){
+  body, table, td, p, a, li, blockquote {
+    -webkit-text-size-adjust: none !important;
+  }
+  body {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  #bodyCell {
+    padding: 10px !important;
+  }
+  #templateContainer {
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+  h1 {
+    font-size: 24px !important;
+    line-height: 100% !important;
+  }
+  h2 {
+    font-size: 20px !important;
+    line-height: 100% !important;
+  }
+  h3 {
+    font-size: 18px !important;
+    line-height: 100% !important;
+  }
+  h4 {
+    font-size: 16px !important;
+    line-height: 100% !important;
+  }
+  #templatePreheader {
+    display: none !important;
+  }
+  #headerImage {
+    width: 100% !important;
+    max-width: 600px !important;
+    height: auto !important;
+  }
+  .headerContent {
+    font-size: 20px !important;
+    line-height: 125% !important;
+  }
+  .bodyContent {
+    font-size: 18px !important;
+    line-height: 125% !important;
+  }
+  .templateColumnContainer {
+    display: block !important;
+    width: 100% !important;
+  }
+  .columnImage {
+    width: 100% !important;
+    max-width: 560px !important;
+    height: auto !important;
+  }
+  .leftColumnContent, .centerColumnContent, .rightColumnContent {
+    font-size: 16px !important;
+    line-height: 125% !important;
+  }
+  .footerContent {
+    font-size: 14px !important;
+    line-height: 115% !important;
+    a {
+      display: block !important;
+    }
+  }
+}

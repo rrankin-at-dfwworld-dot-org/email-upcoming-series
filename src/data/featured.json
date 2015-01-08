@@ -1,0 +1,29 @@
+{
+  "title": "A Special Senatorial Event<br />Just for Council Members",
+  "speaker": {
+    "name": "United States Senator Ted Cruz",
+    "title": "United States Senator"
+  },
+  "img": {
+    "url": "EC_TedCruz_featured.jpg",
+    "height": "auto",
+    "width": "600"
+  },
+  "events": [
+    {
+      "date": [
+        "Sat Nov 15 11:30:00 2014"
+      ],
+      "location": {
+        "text": "Rosewood Crescent Hotel, 400 Crescent Ct., Dallas, TX 75201",
+        "url": "https://goo.gl/maps/XM9XJ"
+      },
+      "url": "https://www.dfwworld.org/Events?cid=5&ceid=2218&cerid=0&cdt=11%2f15%2f2014"
+    }
+  ],
+  "body": [
+    "As the echoes of the 2014 mid-term election campaign fade, Council members have a unique opportunity to hear what all the shouting was about from a man who is keenly interested in the affairs of the nation, U.S. Senator Ted Cruz (R-Texas).",
+    "The highlight of this special luncheon program will be a discussion of timely national and international topics with the senator.",
+    "<a href='https://www.dfwworld.org/Events/Register#PC11637_Wizard1_dgEventItems1_lblEventName_4' target='_blank'>Reserve your place</a> at this extraordinary event!"
+  ]
+}
