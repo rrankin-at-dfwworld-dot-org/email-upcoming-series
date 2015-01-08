@@ -16,6 +16,7 @@ body, #bodyTable {
 
 #templateContainer {
   border: 1px solid #bbb;
+  background-color: #f4f4f4;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
   font-size: 26px;
   font-weight: bold;
   font-style: normal;
-  line-height: 100%;
+  line-height: 125%;
   display: block;
   margin-top: 0;
   margin-right: 0;
@@ -39,7 +40,7 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
-  line-height: 100%;
+  line-height: 125%;
   display: block;
   margin-top: 0;
   margin-right: 0;
@@ -55,7 +56,7 @@ h3 {
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
-  line-height: 100%;
+  line-height: 125%;
   display: block;
   margin-top: 0;
   margin-right: 0;
@@ -68,10 +69,10 @@ h3 {
 
 h4 {
   font-family: Helvetica;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   font-style: italic;
-  line-height: 100%;
+  line-height: 125%;
   display: block;
   margin-top: 0;
   margin-right: 0;
@@ -80,4 +81,14 @@ h4 {
   text-align: left;
   letter-spacing: normal;
   color: #808080 !important;
+}
+
+.date {
+  background-color: #111111;
+  text-align: right;
+  p {
+    margin: 0;
+    padding: 3px 15px 3px 3px;
+    color: #ffffff;
+  }
 }

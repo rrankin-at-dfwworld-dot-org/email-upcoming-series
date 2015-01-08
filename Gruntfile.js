@@ -76,7 +76,6 @@ module.exports = function(grunt) {
                     data: {
                         global: grunt.file.readJSON('src/data/data.json'),
                         featured: grunt.file.readJSON('src/data/featured.json'),
-                        stories: grunt.file.readJSON('src/data/stories.json'),
                         columns: grunt.file.readJSON('src/data/columns.json')
                     }
                 }

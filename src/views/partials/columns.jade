@@ -9,11 +9,14 @@ tr
               tr
                 td.leftColumnContent
                   img.columnImage(src='#{ column.img }', style='max-width:160px;')
+                  div.date
+                    p #{ dateFormatter(column.date[0], 'M D') }
               |                         
               tr
                 td.leftColumnContent(valign='top')
                   h2 !{ column.title }
                   h3 !{ column.speaker.name }
+                  h4 !{ column.speaker.title }
                   each paragraph in column.paragraphs
                     p !{ paragraph }
 

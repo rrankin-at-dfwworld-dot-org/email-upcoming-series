@@ -1,29 +1,37 @@
 {
-  "title": "A Special Senatorial Event<br />Just for Council Members",
-  "speaker": {
-    "name": "United States Senator Ted Cruz",
-    "title": "United States Senator"
-  },
-  "img": {
-    "url": "EC_TedCruz_featured.jpg",
-    "height": "auto",
-    "width": "600"
-  },
-  "events": [
+  "buttons": [
     {
-      "date": [
-        "Sat Nov 15 11:30:00 2014"
-      ],
-      "location": {
-        "text": "Rosewood Crescent Hotel, 400 Crescent Ct., Dallas, TX 75201",
-        "url": "https://goo.gl/maps/XM9XJ"
-      },
-      "url": "https://www.dfwworld.org/Events?cid=5&ceid=2218&cerid=0&cdt=11%2f15%2f2014"
+      "text": "Register now&nbsp;",
+      "url": "https://www.dfwworld.org/Events/Register"
+    },
+    {
+      "text": "More &gt;&gt;&nbsp;",
+      "url": "https://www.dfwworld.org/IPS"
     }
   ],
-  "body": [
-    "As the echoes of the 2014 mid-term election campaign fade, Council members have a unique opportunity to hear what all the shouting was about from a man who is keenly interested in the affairs of the nation, U.S. Senator Ted Cruz (R-Texas).",
-    "The highlight of this special luncheon program will be a discussion of timely national and international topics with the senator.",
-    "<a href='https://www.dfwworld.org/Events/Register#PC11637_Wizard1_dgEventItems1_lblEventName_4' target='_blank'>Reserve your place</a> at this extraordinary event!"
+  "date": [
+    "Thu Jan 22 12:00:00 2015"
+  ],
+  "img": {
+    "size": "full",
+    "style": "none",
+    "url": "EM_JacquesDeLisle.jpg"
+  },
+  "location": [
+    {
+      "text": "Park City Club, 5956 Sherry Ln #1700, Dallas, TX 75225",
+      "url": "https://goo.gl/maps/X7WIa"
+    }
+  ],
+  "paragraphs": [
+    "Jacques deLisle is a veteran China-watcher, a scholar of contemporary Chinese law and politics. A professor at the University of Pennsylvania School of law, he has a special focus on the influence legal reforms have on economic reform and political change in China. Plus, he monitors the relationships China has with Taiwan and Hong Kong &mdash; topics that grab the current events headlines &mdash; as well as other international aspects of the giant nation."
+  ],
+  "speaker": {
+    "name": "Jacques deLisle",
+    "title": "Stephen A. Cozen Professor of Law & Professor of Political Science; Director, Center for East Asian Studies, University of Pennsylvania Law School"
+  },
+  "title": "China's Traditional Inscrutability: A Surprising Look Behind It",
+  "urls": [
+    "https://www.dfwworld.org/Events?cid=5&ceid=2183&cerid=0&cdt=1%2f22%2f2015"
   ]
 }
