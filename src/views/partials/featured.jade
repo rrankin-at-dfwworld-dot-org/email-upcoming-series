@@ -3,7 +3,8 @@ tr
     table(border='0', cellpadding='20', cellspacing='0', width='100%')
       tr
         td.leftColumnContent
-          img.columnImage(src='https://www.dfwworld.org/image/#{ data.featured.img.url }', style='max-width:560px;')
+          a(href="#{ data.featured.urls[0] }", target="_blank")
+            img.columnImage(src='https://www.dfwworld.org/image/#{ data.featured.img.url }', style='max-width:560px;')
           div.date
             p #{ dateFormatter(data.featured.date[0], 'M D') }
       tr
@@ -13,3 +14,5 @@ tr
           h4 !{ data.featured.speaker.title }
           each paragraph in data.featured.paragraphs
             p !{ paragraph }
+          if data.featured.urls[0] && data.featured.urls[0] !== ''
+            a.button(href="#{ data.featured.urls[0] }", target="_blank") Learn more >>

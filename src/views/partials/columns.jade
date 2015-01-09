@@ -4,14 +4,14 @@ tr
     table#templateColumns(border='0', cellpadding='0', cellspacing='0', width='100%')
       tr
         each column in data.columns
-          td.templateColumnContainer(align='center', valign='top', style='padding-top:20px;')
+          td.templateColumnContainer(align='center', valign='top', style='padding-top:20px;', width="30%")
             table(border='0', cellpadding='20', cellspacing='0', width='100%')
               tr
                 td.leftColumnContent
-                  img.columnImage(src='#{ column.img }', style='max-width:160px;')
+                  a(href="#{ column.urls[0] }", target="_blank", title="Learn more about what #{ column.speaker.name } has to say about #{ column.title } and Register now!") 
+                    img.columnImage(src='#{ column.img }', width="180")
                   div.date
-                    p #{ dateFormatter(column.date[0], 'M D') }
-              |                         
+                    p #{ dateFormatter(column.date[0], 'M D') }                      
               tr
                 td.leftColumnContent(valign='top')
                   h2 !{ column.title }
@@ -19,5 +19,6 @@ tr
                   h4 !{ column.speaker.title }
                   each paragraph in column.paragraphs
                     p !{ paragraph }
-
+                  if column.urls[0] && column.urls[0] !== ''
+                    a.button(href="#{ column.urls[0] }", target="_blank") Learn more >>
     // // END COLUMNS

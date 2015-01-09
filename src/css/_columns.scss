@@ -1,5 +1,5 @@
 .templateColumnContainer {
-  width: 200px;
+
 }
 
 #templateColumns {
@@ -13,16 +13,26 @@
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050;
-  a {
+  a.button {
     &:link, &:visited, .yshortcuts {
-      font-weight: normal;
+      font-weight: bold;
       text-decoration: underline;
-      color: #eb4102;
+      color: #a00008;
+      text-decoration: none;
+      border-bottom: 2px dotted #a00008;
+      padding: 5px;
+      transition: 1s all;
+      &:hover, &:active {
+        border-bottom: solid maroon;
+        background-color: #a00008;
+        color: #ffffff;
+        padding:10px;
+      }
     }
   }
 }
@@ -32,12 +42,12 @@
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050;
-  a {
+  a.button {
     &:link, &:visited, .yshortcuts {
       font-weight: normal;
       text-decoration: underline;
@@ -51,12 +61,12 @@
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050;
-  a {
+  a.button {
     &:link, &:visited, .yshortcuts {
       font-weight: normal;
       text-decoration: underline;
@@ -67,6 +77,21 @@
 
 .leftColumnContent img, .rightColumnContent img {
   display: inline;
-  max-width: 260px;
   height: auto;
+}
+
+.leftColumnContent, .centerColumnContent, .rightColumnContent {
+  .columnImage {
+      width: 100%;
+      max-width: 100%;
+    }
+    .date{
+    max-width: 100%;
+  }
+}
+
+#featured{
+  .date{
+    max-width: 560px;
+  }
 }

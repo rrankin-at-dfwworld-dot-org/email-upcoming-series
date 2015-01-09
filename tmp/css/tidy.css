@@ -62,6 +62,7 @@ body,
 
 #templateContainer {
   border: 1px solid #bbb;
+  background-color: #f4f4f4;
 }
 
 h2 {
@@ -69,7 +70,7 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
-  line-height: 100%;
+  line-height: 125%;
   display: block;
   margin-top: 0;
   margin-right: 0;
@@ -85,7 +86,7 @@ h3 {
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
-  line-height: 100%;
+  line-height: 125%;
   display: block;
   margin-top: 0;
   margin-right: 0;
@@ -96,6 +97,33 @@ h3 {
   color: #606060 !important;
 }
 
+h4 {
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 125%;
+  display: block;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  text-align: left;
+  letter-spacing: normal;
+  color: #808080 !important;
+}
+
+.date {
+  background-color: #111111;
+  text-align: right;
+}
+
+.date p {
+  margin: 0;
+  padding: 3px 15px 3px 3px;
+  color: #ffffff;
+}
+
 #templatePreheader {
   border-bottom: 1px solid #ccc;
   background-color: #f4f4f4;
@@ -104,7 +132,11 @@ h3 {
 .preheaderContent {
   font-family: Helvetica;
   font-size: 10px;
-  line-height: 125%;
+  line-height: 150%;
+  padding-top: 10px;
+  padding-right: 5%;
+  padding-bottom: 1px;
+  padding-left: 5%;
   text-align: left;
   color: #808080;
 }
@@ -112,13 +144,18 @@ h3 {
 .preheaderContent a:link,
 .preheaderContent a:visited {
   font-weight: normal;
-  text-decoration: underline;
-  color: #606060;
+  text-decoration: none;
+  color: #2A5EB9;
+  line-height: 30px;
+}
+
+.preheaderContent a.text {
+  border-bottom: #2A5EB9 dotted 2px;
 }
 
 #templateHeader {
   border-top: 1px solid #fff;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
   background-color: #f4f4f4;
 }
 
@@ -141,8 +178,33 @@ h3 {
   height: auto;
 }
 
-.templateColumnContainer {
-  width: 200px;
+#templateBody {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+  background-color: #f4f4f4;
+}
+
+#featured {
+  background-color: #fefefe;
+}
+
+.bodyContent {
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: left;
+  color: #505050;
+}
+
+.bodyContent a:link,
+.bodyContent a:visited {
+  font-weight: normal;
+  text-decoration: underline;
+  color: #a00008;
 }
 
 #templateColumns {
@@ -156,17 +218,50 @@ h3 {
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050;
 }
 
+.leftColumnContent a.button:link,
+.leftColumnContent a.button:visited {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #a00008;
+  text-decoration: none;
+  border-bottom: 2px dotted #a00008;
+  padding: 5px;
+  transition: 1s all;
+}
+
+.leftColumnContent a.button:link:hover,
+.leftColumnContent a.button:link:active,
+.leftColumnContent a.button:visited:hover,
+.leftColumnContent a.button:visited:active {
+  border-bottom: solid maroon;
+  background-color: #a00008;
+  color: #ffffff;
+  padding: 10px;
+}
+
 .leftColumnContent img {
   display: inline;
-  max-width: 260px;
   height: auto;
+}
+
+.leftColumnContent .columnImage {
+  width: 100%;
+  max-width: 100%;
+}
+
+.leftColumnContent .date {
+  max-width: 100%;
+}
+
+#featured .date {
+  max-width: 560px;
 }
 
 #templateFooter {
@@ -179,9 +274,9 @@ h3 {
   font-size: 10px;
   line-height: 150%;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: 5%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 5%;
   text-align: left;
   color: #808080;
 }
@@ -198,7 +293,19 @@ h3 {
   border-bottom: #2A5EB9 dotted 2px;
 }
 
-@media only screen and (max-width: 600px), (max-device-width: 420px) {
+@media only screen and (max-width: 640px), (max-device-width: 960px) {
+  /*
+  .templateColumnContainer {
+    display: block !important;
+    width: 100% !important;
+  }
+  .columnImage {
+    width: 100% !important;
+    max-width: 560px !important;
+    height: auto !important;
+  }
+  */
+
   body,
   table,
   td,
@@ -231,8 +338,13 @@ h3 {
     line-height: 100% !important;
   }
 
+  h4 {
+    font-size: 16px !important;
+    line-height: 100% !important;
+  }
+
   #templatePreheader {
-    display: none !important;
+    display: block !important;
   }
 
   #headerImage {
@@ -246,15 +358,9 @@ h3 {
     line-height: 125% !important;
   }
 
-  .templateColumnContainer {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .columnImage {
-    width: 100% !important;
-    max-width: 560px !important;
-    height: auto !important;
+  .bodyContent {
+    font-size: 18px !important;
+    line-height: 125% !important;
   }
 
   .leftColumnContent {

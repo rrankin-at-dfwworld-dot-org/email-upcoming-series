@@ -76,6 +76,7 @@ module.exports = function(grunt) {
                     data: {
                         global: grunt.file.readJSON('src/data/data.json'),
                         featured: grunt.file.readJSON('src/data/featured.json'),
+                        body: grunt.file.readJSON('src/data/body.json'),
                         columns: grunt.file.readJSON('src/data/columns.json')
                     }
                 }
@@ -150,7 +151,7 @@ module.exports = function(grunt) {
         "sass:compile",
         "uncss:dist",
         "htmlmin:dist",
-        "premailer:dist",
+        //"premailer:dist",
         "imagemin:dist",
         "copy:tmp"
     ]);

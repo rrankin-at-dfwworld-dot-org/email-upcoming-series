@@ -134,11 +134,13 @@ h4 {
   font-size: 10px;
   line-height: 150%;
   padding-top: 10px;
-  padding-right: 20px;
+  padding-right: 5%;
   padding-bottom: 1px;
-  padding-left: 20px;
+  padding-left: 5%;
   text-align: left;
   color: #808080; }
+  .preheaderContent span.logo, .preheaderContent span.share {
+    float: left; }
   .preheaderContent a:link, .preheaderContent a:visited, .preheaderContent a .yshortcuts, .preheaderContent a span {
     font-weight: normal;
     text-decoration: none;
@@ -194,14 +196,12 @@ h4 {
   .bodyContent a:link, .bodyContent a:visited, .bodyContent a .yshortcuts {
     font-weight: normal;
     text-decoration: underline;
-    color: #eb4102; }
+    color: #a00008; }
   .bodyContent img {
     display: inline;
     max-width: 560px;
     height: auto; }
 
-.templateColumnContainer {
-  width: 200px; }
 
 #templateColumns {
   border-top: 1px solid #fff;
@@ -213,27 +213,36 @@ h4 {
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050; }
-  .leftColumnContent a:link, .leftColumnContent a:visited, .leftColumnContent a .yshortcuts {
-    font-weight: normal;
+  .leftColumnContent a.button:link, .leftColumnContent a.button:visited, .leftColumnContent a.button .yshortcuts {
+    font-weight: bold;
     text-decoration: underline;
-    color: #eb4102; }
+    color: #a00008;
+    text-decoration: none;
+    border-bottom: 2px dotted #a00008;
+    padding: 5px;
+    transition: 1s all; }
+    .leftColumnContent a.button:link:hover, .leftColumnContent a.button:link:active, .leftColumnContent a.button:visited:hover, .leftColumnContent a.button:visited:active, .leftColumnContent a.button .yshortcuts:hover, .leftColumnContent a.button .yshortcuts:active {
+      border-bottom: solid maroon;
+      background-color: #a00008;
+      color: #ffffff;
+      padding: 10px; }
 
 .centerColumnContent {
   font-family: Helvetica;
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050; }
-  .centerColumnContent a:link, .centerColumnContent a:visited, .centerColumnContent a .yshortcuts {
+  .centerColumnContent a.button:link, .centerColumnContent a.button:visited, .centerColumnContent a.button .yshortcuts {
     font-weight: normal;
     text-decoration: underline;
     color: #eb4102; }
@@ -243,20 +252,28 @@ h4 {
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
-  padding-right: 20px;
+  padding-right: 3%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 3%;
   text-align: left;
   color: #505050; }
-  .rightColumnContent a:link, .rightColumnContent a:visited, .rightColumnContent a .yshortcuts {
+  .rightColumnContent a.button:link, .rightColumnContent a.button:visited, .rightColumnContent a.button .yshortcuts {
     font-weight: normal;
     text-decoration: underline;
     color: #eb4102; }
 
 .leftColumnContent img, .rightColumnContent img {
   display: inline;
-  max-width: 260px;
   height: auto; }
+
+.leftColumnContent .columnImage, .centerColumnContent .columnImage, .rightColumnContent .columnImage {
+  width: 100%;
+  max-width: 100%; }
+.leftColumnContent .date, .centerColumnContent .date, .rightColumnContent .date {
+  max-width: 100%; }
+
+#featured .date {
+  max-width: 560px; }
 
 #templateFooter {
   border-top: 1px solid #fff;
@@ -267,9 +284,9 @@ h4 {
   font-size: 10px;
   line-height: 150%;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: 5%;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 5%;
   text-align: left;
   color: #808080; }
   .footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
@@ -280,7 +297,18 @@ h4 {
   .footerContent a.text {
     border-bottom: #2A5EB9 dotted 2px; }
 
-@media only screen and (max-width: 600px), (max-device-width: 420px) {
+@media only screen and (max-width: 640px), (max-device-width: 960px) {
+  /*
+  .templateColumnContainer {
+    display: block !important;
+    width: 100% !important;
+  }
+  .columnImage {
+    width: 100% !important;
+    max-width: 560px !important;
+    height: auto !important;
+  }
+  */
   body, table, td, p, a, li, blockquote {
     -webkit-text-size-adjust: none !important; }
   body {
@@ -304,7 +332,14 @@ h4 {
     font-size: 16px !important;
     line-height: 100% !important; }
   #templatePreheader {
-    display: none !important; }
+    display: block !important; }
+    #templatePreheader span.logo, #templatePreheader span.share {
+      float: none !important;
+      display: block !important;
+      width: 100% !important; }
+    #templatePreheader span.share {
+      text-align: center;
+      height: 100px; }
   #headerImage {
     width: 100% !important;
     max-width: 600px !important;
@@ -315,13 +350,6 @@ h4 {
   .bodyContent {
     font-size: 18px !important;
     line-height: 125% !important; }
-  .templateColumnContainer {
-    display: block !important;
-    width: 100% !important; }
-  .columnImage {
-    width: 100% !important;
-    max-width: 560px !important;
-    height: auto !important; }
   .leftColumnContent, .centerColumnContent, .rightColumnContent {
     font-size: 16px !important;
     line-height: 125% !important; }

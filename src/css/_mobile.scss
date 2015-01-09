@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px), (max-device-width: 420px){
+@media only screen and (max-width: 640px), (max-device-width: 960px){
   body, table, td, p, a, li, blockquote {
     -webkit-text-size-adjust: none !important;
   }
@@ -30,7 +30,18 @@
     line-height: 100% !important;
   }
   #templatePreheader {
-    display: none !important;
+    display: block !important;
+    span{
+    &.logo,&.share{
+      float: none !important;
+      display: block !important;
+      width: 100% !important;
+    }
+    &.share {
+      text-align: center;
+      height: 100px;
+    }
+  }
   }
   #headerImage {
     width: 100% !important;
@@ -45,6 +56,7 @@
     font-size: 18px !important;
     line-height: 125% !important;
   }
+  /*
   .templateColumnContainer {
     display: block !important;
     width: 100% !important;
@@ -54,6 +66,7 @@
     max-width: 560px !important;
     height: auto !important;
   }
+  */
   .leftColumnContent, .centerColumnContent, .rightColumnContent {
     font-size: 16px !important;
     line-height: 125% !important;

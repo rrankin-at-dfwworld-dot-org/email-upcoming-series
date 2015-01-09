@@ -1,38 +1,10 @@
 // BEGIN PREHEADER //
 table(border='0', cellpadding='0', cellspacing='0', width='100%')
   tr
-    td.help(align='center', valign='top', width='330', height='40')
-      table(border='0', cellpadding='0', cellspacing='0', width='330')
-        tbody
-          tr(style='border-collapse: collapse;')
-            td(height="40", valign="top", style='border-collapse: collapse; height:40px;')
-              a(href="https://www.dfwworld.org", target="_blank")
-                img(src="https://www.dfwworld.org/image/LG_WAC.gif", alt="World Affairs Council of Dallas/Fort Worth", title="World Affairs Council of Dallas/Fort Worth", height="40", style='height: 40px; padding: 5px;')
-            td(height="40", valign="top", style='border-collapse: collapse; height:40px;')
-              | &nbsp;
-            td(height="40", valign="top", style='border-collapse: collapse; height:40px;')
-                a(href='#{ permalink }') View in Browser
-            td(height="40", valign="top", style='border-collapse: collapse; height:40px;')
-              | &nbsp;
-    td.spacer(align='center', valign='top', width='30', height='40')
-      | &nbsp;
-    td.share(align='right', valign='top', width='240')
-      table(border='0', cellpadding='0', cellspacing='0', height='40')
-        tbody
-          tr(style='border-collapse: collapse;')
-            td.icon-container(valign='top', align='center', width='25', height='40')
-              a(href='#{ permalink }#FB-Like')
-                img(src='http://www.dfwworld.org/image/facebook_icon_blue_round.gif', alt='Facebook icon', border='0', height='40', width='25')
-            td.text(valign='top', align='left', width='40', height='40')
-              a.text(href='#{ permalink }#FB-Like') Like
-            td.icon-container(valign='top', align='center', width='25', height='40')
-              a(href='#{ permalink }#Tweet')
-                img(src='http://www.dfwworld.org/image/twitter_icon_blue_round.gif', alt='Twitter icon', border='0', height='40', width='25')
-            td.text(valign='top', align='left', width='50', height='40')
-              a.text(href='#{ permalink }#Tweet') Tweet
-            td.icon-container(valign='top', align='center', width='25', height='40')
-              a(href='#{ forwardThis }')
-                img(src='http://www.dfwworld.org/image/email_icon_blue_round.gif', alt='Forward icon', border='0', height='40', width='25')
-            td.text(valign='top', align='left', width='75', height='40')
-              a.text(href='#{ forwardThis }') Forward
+    td(align='center', valign='top', width='100%')
+      span.logo(align='center', valign='top', width='30%')
+        a(href="https://www.dfwworld.org", target="_blank")
+          img(src="https://www.dfwworld.org/image/LG_WAC.gif", alt="World Affairs Council of Dallas/Fort Worth", title="World Affairs Council of Dallas/Fort Worth", height="87", style='height: 87px; padding: 5px;')
+      span.share(align='right', valign='top', width='60%')
+        include ../share
 // // END PREHEADER   

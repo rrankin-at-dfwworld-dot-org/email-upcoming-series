@@ -22,10 +22,10 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                       td.headerContent(valign='top')
                         img#headerImage(src='#{ data.global.img.header }', style='max-width:600px;')
                   // // END HEADER
-              if(data.body)             
-                include partials/body
               if(data.featured)
                 include partials/featured
+              if(data.body)             
+                include partials/body
               if(data.columns)
                 include partials/columns             
               tr
