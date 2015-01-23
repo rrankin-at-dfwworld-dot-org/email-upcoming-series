@@ -22,7 +22,6 @@ table,
 tbody,
 tr,
 td,
-div,
 p,
 a {
   margin: 0;
@@ -123,7 +122,6 @@ h4 {
 h2,
 h3,
 h4,
-div,
 p,
 a,
 table {
@@ -167,6 +165,7 @@ table {
 .preheaderContent .share a.text {
   border-bottom: #2A5EB9 dotted 2px;
   line-height: 40px;
+  font-size: 10px;
 }
 
 .preheaderContent .share a img {
@@ -224,6 +223,17 @@ table {
   color: #505050;
 }
 
+.bodyContent .textContainer {
+  width: 560px;
+}
+
+.bodyContent .textContainer p {
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  line-height: 150%;
+}
+
 .bodyContent a:link,
 .bodyContent a:visited {
   font-weight: normal;
@@ -231,37 +241,42 @@ table {
   color: #a00008;
 }
 
-#templateContainer #templateColumns {
+#templateContainer .templateColumns {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   background-color: #f4f4f4;
 }
 
-#templateContainer #templateColumns .templateColumnContainer {
-  padding: 20px 10px 0 10px;
+#templateContainer .templateColumns .templateColumnContainer {
+  width: 200px;
+  padding: 20px 10px 0;
+  margin: 0px;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .imageContainer,
-#templateContainer #templateColumns .templateColumnContainer .dateContainer,
-#templateContainer #templateColumns .templateColumnContainer .textContainer {
+#templateContainer .templateColumns .templateColumnContainer .imageContainer,
+#templateContainer .templateColumns .templateColumnContainer .dateContainer,
+#templateContainer .templateColumns .templateColumnContainer .textContainer {
   text-align: center;
   width: 180px;
   display: block;
   padding: 0px;
+  margin: 0px;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .imageContainer a img {
+#templateContainer .templateColumns .templateColumnContainer .imageContainer a img {
   display: block;
   width: 180px;
+  height: 270px;
+  overflow: hidden;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .dateContainer {
+#templateContainer .templateColumns .templateColumnContainer .dateContainer {
   text-decoration: none;
   height: 25px;
   background-color: #111111;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .dateContainer a {
+#templateContainer .templateColumns .templateColumnContainer .dateContainer a {
   display: block;
   width: 180px;
   color: #ffffff;
@@ -271,24 +286,36 @@ table {
   text-decoration: none !important;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .textContainer {
+#templateContainer .templateColumns .templateColumnContainer .textContainer {
   text-align: left;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .textContainer h2 {
+#templateContainer .templateColumns .templateColumnContainer .textContainer h2 {
   font-size: 18px;
+  margin-top: 10px;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .textContainer h2,
-#templateContainer #templateColumns .templateColumnContainer .textContainer h3,
-#templateContainer #templateColumns .templateColumnContainer .textContainer h4,
-#templateContainer #templateColumns .templateColumnContainer .textContainer p,
-#templateContainer #templateColumns .templateColumnContainer .textContainer a {
+#templateContainer .templateColumns .templateColumnContainer .textContainer h2,
+#templateContainer .templateColumns .templateColumnContainer .textContainer h3,
+#templateContainer .templateColumns .templateColumnContainer .textContainer h4,
+#templateContainer .templateColumns .templateColumnContainer .textContainer p,
+#templateContainer .templateColumns .templateColumnContainer .textContainer a {
   line-height: 150%;
 }
 
-#templateContainer #templateColumns .templateColumnContainer .textContainer p {
+#templateContainer .templateColumns .templateColumnContainer .textContainer p {
   font-size: 14px;
+}
+
+#templateContainer .templateColumns .templateColumnContainer .textContainer p.sponsor {
+  font-size: 9px;
+  font-weight: bold;
+  text-aling: center;
+}
+
+#templateContainer .templateColumns .templateColumnContainer .textContainer p a {
+  font-size: 11px;
+  color: #a00008;
 }
 
 #templateFooter {
@@ -310,6 +337,8 @@ table {
 
 .footerContent a {
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  line-height: 30px;
 }
 
 .footerContent a:link,
@@ -322,4 +351,30 @@ table {
 
 .footerContent a.text {
   border-bottom: #2A5EB9 dotted 2px;
+}
+
+#outlook-button {
+  width: 180px;
+  height: 60px;
+}
+
+#outlook-button td {
+  background: #A00008;
+  padding: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  display: block;
+}
+
+#outlook-button td a {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-decoration: none;
 }

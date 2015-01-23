@@ -7,7 +7,7 @@
       }
     ],
     "date": [
-      "Tue Feb 24 18:30:00 2015"
+      "Tue Feb 24 18:00:00 2015"
     ],
     "img": {
       "size": "half",
@@ -16,10 +16,11 @@
     },
     "location": [
       {
-        "text": "Rosewood Crescent Hotel,  400 Crescent Ct.,  Dallas, TX 75201",
+        "text": "Rosewood Crescent Hotel, 400 Crescent Ct., Dallas, TX 75201",
         "url": "https://goo.gl/maps/XM9XJ"
       }
     ],
+    "CC": true,
     "paragraphs": [
       "When President George W. Bush launched what's regarded as \"the First American-Afghan War,\" after the 9/11 attacks in 2001, the task of running it fell to Robert L. Grenier, the CIA station chief in Islamabad, Pakistan.",
       "Respected Kirkus Reviews describes the book as \"a catalog of occasional victories and constant missteps that is eye-opening, illuminating and maddening.\"",
@@ -34,7 +35,8 @@
     "title": "88 Days to Kandahar: A CIA Diary",
     "urls": [
       "https://www.dfwworld.org/Events?cid=5&ceid=2264&cerid=0&cdt=2%2f24%2f2015"
-    ]
+    ],
+    "sponsors": ["Media Partner: <em>The Dallas Morning News</em>"]
   },
   {
     "buttons": [
@@ -52,16 +54,16 @@
     },
     "location": [
       {
-        "text": "Rosewood Crescent Dallas,  400 Crescent Ct.,  Dallas, TX 75201",
+        "text": "Rosewood Crescent Dallas, 400 Crescent Ct., Dallas, TX 75201",
         "url": "https://goo.gl/maps/XM9XJ"
       }
     ],
+    "CC": false,
     "paragraphs": [
-      "George Friedman is the Chairman of Stratfor, a company he founded in 1996 that is now a leader in the field of global intelligence. Friedman guides Stratfor's strategic vision and oversees the development and training of the company's intelligence unit.",
-      "A very popular keynote speaker, Dr. Friedman is in high demand at numerous conferences and industry-specific events for major financial firms such as J.P. Morgan, Citibank, Ernst &amp; Young and many Fortune 500 companies. In addition, he has briefed the Australian Command and Staff College, Eglin Air Force Research Laboratory, U.S. Marine Corps Command and Staff College and many other military and government organizations. Dr. Friedman is frequently invited to speak internationally, including in Turkey, Germany, Poland, Azerbaijan, Australia and New Zealand.",
-      "He received his Bachelor's degree from the City College of the City University of New York and holds a Ph.D. in Government from Cornell University.",
-      "<strong>AREAS OF EXPERTISE</strong>",
-      "<em>Taken from Stratfor Global Intelligence</em>."
+      "The unifying demonstrations against terrorism in Europe, changing monetary values and Russia's strategies in crisis have all drawn worldwide attention but as those storms rage, consider that it may be nothing unexpected in the world of George Friedman, founder and chairman of Austin-based Stratfor Global Intelligence.",
+      "He has long had an understanding of the dynamics of Europe. In the wake of the current disruptions, he'll speak to the Council on March 17. His topic? Timely.  It's \"Flash Points: The Emerging Crisis in Europe.\" Get your tickets today for this very special presentation in the Council's Focus on Intelligence Series.",
+      "Friedman also keeps an eye on China's economy and how falling oil prices could mean a change in Russian leadership, i.e., an end to Vladimir Putin's reign. Dallas Morning News Business Columnist Cheryl Hall has a <a href='http://www.dallasnews.com/business/columnists/cheryl-hall/20141101-the-most-dangerous-spot-in-the-world-europe-not-the-middle-east.ece' target='_blank'>sweeping report on Friedman's perspective</a> from a November appearance in Dallas.",
+      "In Friedman's assessment of Europe, unemployment, racism, immigration and war all become characters fueled by the continent's violent past. The author's New York Times best-sellers include his 2009 book The Next 100 Years: A Forecast for the 21st Century and, in 2010, The Next Decade: What The World Will Look Like.  In 1996, he founded Strategic Forecasting Inc., now known as Stratfor, as a publishing/global intelligence firm. Friedman and his associates at Stratfor are frequently called upon by organizations, government officials, other nations and media to authoritatively discuss international developments."
     ],
     "speaker": {
       "name": "George Friedman",
@@ -70,7 +72,8 @@
     "title": "Flash Points: The Emerging Crisis in Europe",
     "urls": [
       "https://www.dfwworld.org/Events?cid=5&ceid=2268&cerid=0&cdt=3%2f17%2f2015"
-    ]
+    ],
+    "sponsors":["A program of the World Affairs Councils of America in partnership with the Delegation of the European Union to the United States."]
   },
   {
     "buttons": [
@@ -80,7 +83,7 @@
       }
     ],
     "date": [
-      "Tue May 19 19:00:00 2015"
+      "Tue May 19 18:30:00 2015"
     ],
     "img": {
       "size": "half",
@@ -93,6 +96,7 @@
         "url": "https://goo.gl/maps/XM9XJ"
       }
     ],
+    "CC": true,
     "paragraphs": [
       "The opening sentence in the publisher's note about Jack Devine's book Good Hunting: An American Spymaster Story evokes enough excitement for a Hollywood movie. It reads: \"Jack Devine ran Charlie Wilson's War in Afghanistan.\"",
       "Devine's decades-long career as a CIA covert operative took him not only to Afghanistan, but to missions involving Columbia, Iraq and Chile, among other headline-making places. The book touches on it all and illuminates \"some of the CIA’s deepest secrets and spans an illustrious tenure&mdash;and never before has an acting deputy director of operations come forth with such an account.\"",

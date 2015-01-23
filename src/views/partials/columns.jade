@@ -1,32 +1,49 @@
 tr
   td(align='center', valign='top')
     // BEGIN COLUMNS //
-    table#templateColumns(border='0', cellpadding='0', cellspacing='0', width='100%')
+    table.templateColumns(border='0', cellpadding='0', cellspacing='0', width='100%')
       tr
         each column in data.columns
-          td.templateColumnContainer(align='center', valign='top', width="auto")
-            table(border='0', cellpadding='10', cellspacing='0', width='100%')
+          td.templateColumnContainer(align='center', valign='top', width="200")
+            table(border='0', cellpadding='0', cellspacing='0', width='100%')
               tr
                 td.imageContainer(align='center', valign='top')
-                  a(href="#{ column.urls[0] }", target="_blank", title="Learn more about what #{ column.speaker.name } has to say about #{ column.title } and Register now!") 
+                  a(href="#{ column.urls[0] }", target="_blank", title="Learn more about #{ column.speaker.name },\n#{ column.title } \nand how to join us &rarr;") 
                     img(src='#{ column.img.url }', width="180")
               tr
                 td.dateContainer(align='center', valign='middle', width="180")
-                  a(href="#{ column.urls[0] }", target="_blank", title="Learn more about what #{ column.speaker.name } has to say about #{ column.title } and Register now!") #{ dateFormatter(column.date[0], 'M D') }                      
+                  a(href="#{ column.urls[0] }", target="_blank", title="Learn more about #{ column.speaker.name }, \n#{ column.title } \nand how to join us &rarr;") #{ dateFormatter(column.date[0], 'M D') }                      
               tr
-                td.textContainer(align='center', valign='bottom', width="180", height="80")
+                td.textContainer(align='center', valign='bottom', width="180", height="auto")
                   h2 !{ column.title }
               tr
-                td.textContainer(align='center', valign='middle', width="180", height="25")
+                td.textContainer(align='center', valign='middle', width="180", height="auto")
                   h3 !{ column.speaker.name }
               tr
-                td.textContainer(align='center', valign='top', width="180", height="80")
+                td.textContainer(align='center', valign='top', width="180", height="auto")
                   h4 !{ column.speaker.title }
               tr
-                td.textContainer(align='center', valign='top', width="180", height="250")
+                td.textContainer(align='center', valign='top', width="180", height="auto")
                   //each paragraph in column.paragraphs
                   - var paragraph = column.paragraphs[0];
-                    p !{ paragraph }
+                    p !{ paragraph }        
+              tr
+                td.textContainer(align='center', valign='top', width="180", height="auto")
+                  if column.sponsors && column.sponsors.length > 0
+                    br
+                    each sponsor in column.sponsors
+                      p.sponsor !{ sponsor }
+              tr
+                td.textContainer(align='center', valign='top', width="180", height="auto")
+                  if column.CC && column.CC === true
+                    br
+                    p
+                      a(href="#{ column.urls[0] }", target="_blank") Contributors' Circle Dinner &rarr;
+     table.templateColumns(border='0', cellpadding='0', cellspacing='0', width='100%')
+      tr
+        each column in data.columns
+          td.templateColumnContainer(align='center', valign='top', width="200")
+            table(border='0', cellpadding='0', cellspacing='0', width='100%')   
               tr
                 td.textContainer(align='center', valign='middle', width="180", height="80")
                   if column.urls[0] && column.urls[0] !== ''

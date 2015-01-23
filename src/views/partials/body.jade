@@ -9,4 +9,8 @@ tr
               each button in data.body.buttons
                 td(align="center", width="#{ width }")
                   include buttons/outlook-friendly
-                
+          table
+            tr
+              td.textContainer
+                each paragraph in data.body.paragraphs
+                  p !{ paragraph }

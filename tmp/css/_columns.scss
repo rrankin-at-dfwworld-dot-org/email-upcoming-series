@@ -1,21 +1,26 @@
 #templateContainer{
-  #templateColumns {
+  .templateColumns {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #ccc;
     background-color: #f4f4f4;
     .templateColumnContainer {
-      padding: 20px 10px 0 10px;
+      width: 200px;
+      padding: 20px 10px 0;
+      margin: 0px;
       .imageContainer, .dateContainer, .textContainer{
         text-align: center;
         width: 180px;
         display: block;
         padding: 0px;
+        margin:0px;
       }
       .imageContainer{
         a{
           img{
             display: block;
             width: 180px;
+            height: 270px;
+            overflow: hidden;
           }
         }
       }
@@ -37,12 +42,22 @@
         text-align: left;
         h2{
           font-size: 18px;
+          margin-top: 10px;
         }
         h2,h3,h4,p,ul,ol,li,a{
           line-height: 150%;
         }
         p{
           font-size: 14px;
+          &.sponsor{
+            font-size: 9px;
+            font-weight: bold;
+            text-aling: center;
+          }
+          a{
+              font-size: 11px;
+              color: #a00008;
+          }
         }
       }
     }
