@@ -1,47 +1,112 @@
 [
   {
-    "title": "Russia",
-    "speaker": {
-      "name": "Fiona Hill",
-      "title": "Director, Center on the United States and Europe and Senior Fellow in the Foreign Policy Program, Brookings Institution"
-    },
-    "date": [
-      "Tue, 21 Apr, 2015 12:00 PM"
+    "buttons": [
+      {
+        "text": "Register now",
+        "url": "https://www.dfwworld.org/Events/Register"
+      }
     ],
-    "img": "image/SH_FionaHill2015.jpg",
-    "urls":["https://www.dfwworld.org/Events?cid=5&ceid=2185&cerid=0&cdt=3%2f20%2f2015"],
+    "date": [
+      "Tue Feb 24 18:30:00 2015"
+    ],
+    "img": {
+      "size": "half",
+      "style": "book",
+      "url": "/image/BC_88DaysToKanahar.jpg"
+    },
+    "location": [
+      {
+        "text": "Rosewood Crescent Hotel,  400 Crescent Ct.,  Dallas, TX 75201",
+        "url": "https://goo.gl/maps/XM9XJ"
+      }
+    ],
     "paragraphs": [
-      "The daughter of a British coal miner and a nurse grows up to leave England, earn a Ph.D. in history at Harvard and write books and articles about Russia's history, its future and the controversial personality who commands the current post-Communist nation."
+      "When President George W. Bush launched what's regarded as \"the First American-Afghan War,\" after the 9/11 attacks in 2001, the task of running it fell to Robert L. Grenier, the CIA station chief in Islamabad, Pakistan.",
+      "Respected Kirkus Reviews describes the book as \"a catalog of occasional victories and constant missteps that is eye-opening, illuminating and maddening.\"",
+      "Subtitled \"A CIA Diary,\" the book provides a platform for Grenier to cite the names of supporters and detractors while outlining the many challenges to his strategy. He planned a way to unite supporters in Afghanistan to achieve what was planned to be \"final defeat of the Taliban\" while allowing future Afghan President Hamid Karzai to rise to power in \"88 chaotic days.\"",
+      "Later in his CIA career, Grenier served as the Chief of Counter Terrorism, provided key testimony in the infamous Lewis 'Scooter' Libby/CIA leak trial and, after leaving the CIA, became Chairman of ERG Partners, a financial and strategic advisory firm that focuses on security and intelligence.",
+      "Grenier is frequently sought by media to comment on matters involving counterterrorism, CIA interrogation policies and current events."
+    ],
+    "speaker": {
+      "name": "Robert Grenier",
+      "title": "Chairman, ERG Partners; 27-Year Veteran, Central Intelligence Agency"
+    },
+    "title": "88 Days to Kandahar: A CIA Diary",
+    "urls": [
+      "https://www.dfwworld.org/Events?cid=5&ceid=2264&cerid=0&cdt=2%2f24%2f2015"
     ]
   },
   {
-    "title": "The Next 40 Years of U.S. Foreign Policy",
-    "speaker": {
-      "name": "Elizabeth Cobbs Hoffman",
-      "title": "Dwight E. Stanford Professor of American Foreign Relations, San Diego State University"
-    },
-    "date": [
-      "Fri, 20 Mar, 2015 12:00 PM"
+    "buttons": [
+      {
+        "text": "Register now",
+        "url": "https://www.dfwworld.org/Events/Register"
+      }
     ],
-    "img": "image/SH_ElizabethCobbsHoffman2015.jpg",
-    "urls":["https://www.dfwworld.org/Events?cid=5&ceid=2186&cerid=0&cdt=4%2f21%2f2015"],
+    "date": [
+      "Tue Mar 17 18:30:00 2015"
+    ],
+    "img": {
+      "size": "half",
+      "url": "/image/BC_FlashPoints.jpg"
+    },
+    "location": [
+      {
+        "text": "Rosewood Crescent Dallas,  400 Crescent Ct.,  Dallas, TX 75201",
+        "url": "https://goo.gl/maps/XM9XJ"
+      }
+    ],
     "paragraphs": [
-      "Elizabeth Cobbs Hoffman, a San Diego professor who traces her career to best-selling western fiction writer Louis L'Amour, began a recent guest column on the Reuters website with \"History has no on-off buttons. Change is never instantaneous.\""
+      "George Friedman is the Chairman of Stratfor, a company he founded in 1996 that is now a leader in the field of global intelligence. Friedman guides Stratfor's strategic vision and oversees the development and training of the company's intelligence unit.",
+      "A very popular keynote speaker, Dr. Friedman is in high demand at numerous conferences and industry-specific events for major financial firms such as J.P. Morgan, Citibank, Ernst &amp; Young and many Fortune 500 companies. In addition, he has briefed the Australian Command and Staff College, Eglin Air Force Research Laboratory, U.S. Marine Corps Command and Staff College and many other military and government organizations. Dr. Friedman is frequently invited to speak internationally, including in Turkey, Germany, Poland, Azerbaijan, Australia and New Zealand.",
+      "He received his Bachelor's degree from the City College of the City University of New York and holds a Ph.D. in Government from Cornell University.",
+      "<strong>AREAS OF EXPERTISE</strong>",
+      "<em>Taken from Stratfor Global Intelligence</em>."
+    ],
+    "speaker": {
+      "name": "George Friedman",
+      "title": "Chairman and Founder, Stratfor"
+    },
+    "title": "Flash Points: The Emerging Crisis in Europe",
+    "urls": [
+      "https://www.dfwworld.org/Events?cid=5&ceid=2268&cerid=0&cdt=3%2f17%2f2015"
     ]
   },
   {
-    "title": "The American Way of War",
-    "speaker": {
-      "name": "Dominic Tierney",
-      "title": "Assistant Professor of Political Science, Swarthmore College"
-    },
-    "date": [
-      "Fri, 29 May, 2015 12:00 PM"
+    "buttons": [
+      {
+        "text": "Register now",
+        "url": "https://www.dfwworld.org/Events/Register"
+      }
     ],
-    "img": "image/SH_DominicTierney2015.jpg",
-    "urls":["https://www.dfwworld.org/Events?cid=5&ceid=2184&cerid=0&cdt=5%2f29%2f2015"],
+    "date": [
+      "Tue May 19 19:00:00 2015"
+    ],
+    "img": {
+      "size": "half",
+      "style": "book",
+      "url": "/image/BC_GoodHunting.jpg"
+    },
+    "location": [
+      {
+        "text": "Rosewood Crescent Hotel,  400 Crescent Ct.,  Dallas, TX 75201",
+        "url": "https://goo.gl/maps/XM9XJ"
+      }
+    ],
     "paragraphs": [
-      "Dominic Tierney is associate professor of political science, a senior fellow at the Foreign Policy Research Institute, and an official correspondent at The Atlantic.  He is the author of <em>The American Way of War:  Why We Struggle and How We Can Start Winning Again</em>."
+      "The opening sentence in the publisher's note about Jack Devine's book Good Hunting: An American Spymaster Story evokes enough excitement for a Hollywood movie. It reads: \"Jack Devine ran Charlie Wilson's War in Afghanistan.\"",
+      "Devine's decades-long career as a CIA covert operative took him not only to Afghanistan, but to missions involving Columbia, Iraq and Chile, among other headline-making places. The book touches on it all and illuminates \"some of the CIA’s deepest secrets and spans an illustrious tenure&mdash;and never before has an acting deputy director of operations come forth with such an account.\"",
+      "Devine also takes the opportunity to discuss shortcomings and challenges of the current CIA, i.e., \"trapped in a larger bureaucracy,\" he writes.",
+      "After leaving the CIA, Devine became a founding partner of The Arkin Group, an international risk consulting and intelligence firm.",
+      "In addition to the Texas connection between Devine and Lufkin Democratic Congressman Charlie Wilson (played by Tom Hanks in the movie Charlie Wilson's War), there is one more Texas link: Devine's co-author is Houston Chronicle managing editor Vernon Loeb."
+    ],
+    "speaker": {
+      "name": "Jack Devine",
+      "title": "Founding partner and President, The Arkin Group LLC; 32-Year Veteran, Central Intelligence Agency"
+    },
+    "title": "Good Hunting: An American Spymaster’s Story",
+    "urls": [
+      "https://www.dfwworld.org/Events?cid=5&ceid=2262&cerid=0&cdt=5%2f19%2f2015"
     ]
   }
 ]

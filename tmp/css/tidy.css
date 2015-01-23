@@ -17,7 +17,14 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-body {
+body,
+table,
+tbody,
+tr,
+td,
+div,
+p,
+a {
   margin: 0;
   padding: 0;
 }
@@ -66,7 +73,7 @@ body,
 }
 
 h2 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
@@ -82,7 +89,7 @@ h2 {
 }
 
 h3 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -98,7 +105,7 @@ h3 {
 }
 
 h4 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: italic;
@@ -113,15 +120,14 @@ h4 {
   color: #808080 !important;
 }
 
-.date {
-  background-color: #111111;
-  text-align: right;
-}
-
-.date p {
-  margin: 0;
-  padding: 3px 15px 3px 3px;
-  color: #ffffff;
+h2,
+h3,
+h4,
+div,
+p,
+a,
+table {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #templatePreheader {
@@ -130,7 +136,7 @@ h4 {
 }
 
 .preheaderContent {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 10px;
   line-height: 150%;
   padding-top: 10px;
@@ -141,16 +147,31 @@ h4 {
   color: #808080;
 }
 
-.preheaderContent a:link,
-.preheaderContent a:visited {
+.preheaderContent .logo img {
+  width: 200px;
+  height: auto;
+}
+
+.preheaderContent .share {
+  width: 300px;
+}
+
+.preheaderContent .share a:link,
+.preheaderContent .share a:visited {
   font-weight: normal;
   text-decoration: none;
   color: #2A5EB9;
-  line-height: 30px;
+  line-height: 40px;
 }
 
-.preheaderContent a.text {
+.preheaderContent .share a.text {
   border-bottom: #2A5EB9 dotted 2px;
+  line-height: 40px;
+}
+
+.preheaderContent .share a img {
+  width: 30px;
+  height: 30px;
 }
 
 #templateHeader {
@@ -160,8 +181,8 @@ h4 {
 }
 
 .headerContent {
-  font-family: Helvetica;
-  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
   font-weight: bold;
   line-height: 100%;
   padding-top: 0;
@@ -171,6 +192,13 @@ h4 {
   text-align: left;
   vertical-align: middle;
   color: #505050;
+}
+
+.headerContent a:link,
+.headerContent a:visited {
+  font-weight: normal;
+  text-decoration: underline;
+  color: #eb4102;
 }
 
 #headerImage {
@@ -184,12 +212,8 @@ h4 {
   background-color: #f4f4f4;
 }
 
-#featured {
-  background-color: #fefefe;
-}
-
 .bodyContent {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 150%;
   padding-top: 20px;
@@ -207,61 +231,64 @@ h4 {
   color: #a00008;
 }
 
-#templateColumns {
+#templateContainer #templateColumns {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   background-color: #f4f4f4;
 }
 
-.leftColumnContent {
-  font-family: Helvetica;
-  font-size: 14px;
-  line-height: 150%;
-  padding-top: 0;
-  padding-right: 3%;
-  padding-bottom: 20px;
-  padding-left: 3%;
-  text-align: left;
-  color: #505050;
+#templateContainer #templateColumns .templateColumnContainer {
+  padding: 20px 10px 0 10px;
 }
 
-.leftColumnContent a.button:link,
-.leftColumnContent a.button:visited {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #a00008;
+#templateContainer #templateColumns .templateColumnContainer .imageContainer,
+#templateContainer #templateColumns .templateColumnContainer .dateContainer,
+#templateContainer #templateColumns .templateColumnContainer .textContainer {
+  text-align: center;
+  width: 180px;
+  display: block;
+  padding: 0px;
+}
+
+#templateContainer #templateColumns .templateColumnContainer .imageContainer a img {
+  display: block;
+  width: 180px;
+}
+
+#templateContainer #templateColumns .templateColumnContainer .dateContainer {
   text-decoration: none;
-  border-bottom: 2px dotted #a00008;
-  padding: 5px;
-  transition: 1s all;
+  height: 25px;
+  background-color: #111111;
 }
 
-.leftColumnContent a.button:link:hover,
-.leftColumnContent a.button:link:active,
-.leftColumnContent a.button:visited:hover,
-.leftColumnContent a.button:visited:active {
-  border-bottom: solid maroon;
-  background-color: #a00008;
+#templateContainer #templateColumns .templateColumnContainer .dateContainer a {
+  display: block;
+  width: 180px;
   color: #ffffff;
-  padding: 10px;
+  padding: 4px 0;
+  line-height: 20px;
+  font-size: 13px;
+  text-decoration: none !important;
 }
 
-.leftColumnContent img {
-  display: inline;
-  height: auto;
+#templateContainer #templateColumns .templateColumnContainer .textContainer {
+  text-align: left;
 }
 
-.leftColumnContent .columnImage {
-  width: 100%;
-  max-width: 100%;
+#templateContainer #templateColumns .templateColumnContainer .textContainer h2 {
+  font-size: 18px;
 }
 
-.leftColumnContent .date {
-  max-width: 100%;
+#templateContainer #templateColumns .templateColumnContainer .textContainer h2,
+#templateContainer #templateColumns .templateColumnContainer .textContainer h3,
+#templateContainer #templateColumns .templateColumnContainer .textContainer h4,
+#templateContainer #templateColumns .templateColumnContainer .textContainer p,
+#templateContainer #templateColumns .templateColumnContainer .textContainer a {
+  line-height: 150%;
 }
 
-#featured .date {
-  max-width: 560px;
+#templateContainer #templateColumns .templateColumnContainer .textContainer p {
+  font-size: 14px;
 }
 
 #templateFooter {
@@ -281,6 +308,10 @@ h4 {
   color: #808080;
 }
 
+.footerContent a {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .footerContent a:link,
 .footerContent a:visited {
   font-weight: normal;
@@ -291,89 +322,4 @@ h4 {
 
 .footerContent a.text {
   border-bottom: #2A5EB9 dotted 2px;
-}
-
-@media only screen and (max-width: 640px), (max-device-width: 960px) {
-  /*
-  .templateColumnContainer {
-    display: block !important;
-    width: 100% !important;
-  }
-  .columnImage {
-    width: 100% !important;
-    max-width: 560px !important;
-    height: auto !important;
-  }
-  */
-
-  body,
-  table,
-  td,
-  p,
-  a {
-    -webkit-text-size-adjust: none !important;
-  }
-
-  body {
-    width: 100% !important;
-    min-width: 100% !important;
-  }
-
-  #bodyCell {
-    padding: 10px !important;
-  }
-
-  #templateContainer {
-    width: 100% !important;
-    max-width: 600px !important;
-  }
-
-  h2 {
-    font-size: 20px !important;
-    line-height: 100% !important;
-  }
-
-  h3 {
-    font-size: 18px !important;
-    line-height: 100% !important;
-  }
-
-  h4 {
-    font-size: 16px !important;
-    line-height: 100% !important;
-  }
-
-  #templatePreheader {
-    display: block !important;
-  }
-
-  #headerImage {
-    width: 100% !important;
-    max-width: 600px !important;
-    height: auto !important;
-  }
-
-  .headerContent {
-    font-size: 20px !important;
-    line-height: 125% !important;
-  }
-
-  .bodyContent {
-    font-size: 18px !important;
-    line-height: 125% !important;
-  }
-
-  .leftColumnContent {
-    font-size: 16px !important;
-    line-height: 125% !important;
-  }
-
-  .footerContent {
-    font-size: 14px !important;
-    line-height: 115% !important;
-  }
-
-  .footerContent a {
-    display: block !important;
-  }
 }

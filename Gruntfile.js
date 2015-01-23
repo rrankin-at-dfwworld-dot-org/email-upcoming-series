@@ -60,7 +60,8 @@ module.exports = function(grunt) {
         sass: {
             compile: {
                 files: {
-                     "tmp/css/style.css" : "src/css/style.scss"
+                     "tmp/css/style.css" : "src/css/style.scss",
+                     "tmp/css/mobile.css": "src/css/mobile.scss"
                 }
             }
         },
@@ -75,7 +76,7 @@ module.exports = function(grunt) {
                     pretty: true,
                     data: {
                         global: grunt.file.readJSON('src/data/data.json'),
-                        featured: grunt.file.readJSON('src/data/featured.json'),
+                        //featured: grunt.file.readJSON('src/data/featured.json'),
                         body: grunt.file.readJSON('src/data/body.json'),
                         columns: grunt.file.readJSON('src/data/columns.json')
                     }
@@ -87,16 +88,16 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: "tmp/images",
+                    cwd: "tmp/image",
                     src: ["**/*.{png,jpg,jpeg}"],
-                    dest: "dist/images"
+                    dest: "dist/image"
                 }]
             }
         },
 
         uncss: {
             options: {
-                media: ['(min-width: 320px) and (max-width: 630px)', '(max-device-width: 640px)'],
+                //media: ['screen'],
                 stylesheets: ['css/style.css']
             },
             dist: {

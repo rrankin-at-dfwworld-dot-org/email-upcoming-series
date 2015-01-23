@@ -4,7 +4,7 @@
 }
 
 .preheaderContent {
-  font-family: Helvetica;
+  font-family: $font-stack;
   font-size: 10px;
   line-height: 150%;
   padding-top: 10px;
@@ -13,20 +13,29 @@
   padding-left: 5%;
   text-align: left;
   color: #808080;
-  span{
-    &.logo,&.share{
-      float: left;
+  .logo{
+    img{
+      width: 200px;
+      height: auto;
     }
   }
-  a {
-    &:link, &:visited, .yshortcuts, span {
-      font-weight: normal;
-      text-decoration: none;
-      color: $bright-blue;
-      line-height: 30px;
-    }
-    &.text {
-      border-bottom: $bright-blue dotted 2px;
+  .share {
+    width: 300px;
+    a {
+      &:link, &:visited, .yshortcuts, span {
+        font-weight: normal;
+        text-decoration: none;
+        color: $bright-blue;
+        line-height: 40px;
+      }
+      &.text {
+        border-bottom: $bright-blue dotted 2px;
+        line-height: 40px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -38,8 +47,8 @@
 }
 
 .headerContent {
-  font-family: Helvetica;
-  font-size: 20px;
+  font-family: $font-stack;
+  font-size: 11px;
   font-weight: bold;
   line-height: 100%;
   padding-top: 0;

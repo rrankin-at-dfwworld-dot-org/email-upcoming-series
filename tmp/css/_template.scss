@@ -20,7 +20,7 @@ body, #bodyTable {
 }
 
 h1 {
-  font-family: Helvetica;
+  font-family: $font-stack;
   font-size: 26px;
   font-weight: bold;
   font-style: normal;
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-family: Helvetica;
+  font-family: $font-stack;
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-  font-family: Helvetica;
+  font-family: $font-stack;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -68,7 +68,7 @@ h3 {
 }
 
 h4 {
-  font-family: Helvetica;
+  font-family: $font-stack;
   font-size: 12px;
   font-weight: normal;
   font-style: italic;
@@ -83,12 +83,6 @@ h4 {
   color: #808080 !important;
 }
 
-.date {
-  background-color: #111111;
-  text-align: right;
-  p {
-    margin: 0;
-    padding: 3px 15px 3px 3px;
-    color: #ffffff;
-  }
+h1, h2, h3, h4, h5, li, div, p, span, a, table {
+  font-family: $font-stack;
 }

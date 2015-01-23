@@ -21,7 +21,7 @@ table, td {
 img {
   -ms-interpolation-mode: bicubic; }
 
-body {
+body, table, tbody, tr, td, div, p, span, a, ul, ol, li {
   margin: 0;
   padding: 0; }
 
@@ -58,7 +58,7 @@ body, #bodyTable {
   background-color: #f4f4f4; }
 
 h1 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 26px;
   font-weight: bold;
   font-style: normal;
@@ -73,7 +73,7 @@ h1 {
   color: #202020 !important; }
 
 h2 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
@@ -88,7 +88,7 @@ h2 {
   color: #404040 !important; }
 
 h3 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
@@ -103,7 +103,7 @@ h3 {
   color: #606060 !important; }
 
 h4 {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: italic;
@@ -117,20 +117,15 @@ h4 {
   letter-spacing: normal;
   color: #808080 !important; }
 
-.date {
-  background-color: #111111;
-  text-align: right; }
-  .date p {
-    margin: 0;
-    padding: 3px 15px 3px 3px;
-    color: #ffffff; }
+h1, h2, h3, h4, h5, li, div, p, span, a, table {
+  font-family: Helvetica, Arial, sans-serif; }
 
 #templatePreheader {
   border-bottom: 1px solid #ccc;
   background-color: #f4f4f4; }
 
 .preheaderContent {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 10px;
   line-height: 150%;
   padding-top: 10px;
@@ -139,15 +134,22 @@ h4 {
   padding-left: 5%;
   text-align: left;
   color: #808080; }
-  .preheaderContent span.logo, .preheaderContent span.share {
-    float: left; }
-  .preheaderContent a:link, .preheaderContent a:visited, .preheaderContent a .yshortcuts, .preheaderContent a span {
-    font-weight: normal;
-    text-decoration: none;
-    color: #2A5EB9;
-    line-height: 30px; }
-  .preheaderContent a.text {
-    border-bottom: #2A5EB9 dotted 2px; }
+  .preheaderContent .logo img {
+    width: 200px;
+    height: auto; }
+  .preheaderContent .share {
+    width: 300px; }
+    .preheaderContent .share a:link, .preheaderContent .share a:visited, .preheaderContent .share a .yshortcuts, .preheaderContent .share a span {
+      font-weight: normal;
+      text-decoration: none;
+      color: #2A5EB9;
+      line-height: 40px; }
+    .preheaderContent .share a.text {
+      border-bottom: #2A5EB9 dotted 2px;
+      line-height: 40px; }
+    .preheaderContent .share a img {
+      width: 30px;
+      height: 30px; }
 
 #templateHeader {
   border-top: 1px solid #fff;
@@ -155,8 +157,8 @@ h4 {
   background-color: #f4f4f4; }
 
 .headerContent {
-  font-family: Helvetica;
-  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
   font-weight: bold;
   line-height: 100%;
   padding-top: 0;
@@ -184,7 +186,7 @@ h4 {
   background-color: #fefefe; }
 
 .bodyContent {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 150%;
   padding-top: 20px;
@@ -202,14 +204,43 @@ h4 {
     max-width: 560px;
     height: auto; }
 
-
-#templateColumns {
+#templateContainer #templateColumns {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
   background-color: #f4f4f4; }
+  #templateContainer #templateColumns .templateColumnContainer {
+    padding: 20px 10px 0 10px; }
+    #templateContainer #templateColumns .templateColumnContainer .imageContainer, #templateContainer #templateColumns .templateColumnContainer .dateContainer, #templateContainer #templateColumns .templateColumnContainer .textContainer {
+      text-align: center;
+      width: 180px;
+      display: block;
+      padding: 0px; }
+    #templateContainer #templateColumns .templateColumnContainer .imageContainer a img {
+      display: block;
+      width: 180px; }
+    #templateContainer #templateColumns .templateColumnContainer .dateContainer {
+      text-decoration: none;
+      height: 25px;
+      background-color: #111111; }
+      #templateContainer #templateColumns .templateColumnContainer .dateContainer a {
+        display: block;
+        width: 180px;
+        color: #ffffff;
+        padding: 4px 0;
+        line-height: 20px;
+        font-size: 13px;
+        text-decoration: none !important; }
+    #templateContainer #templateColumns .templateColumnContainer .textContainer {
+      text-align: left; }
+      #templateContainer #templateColumns .templateColumnContainer .textContainer h2 {
+        font-size: 18px; }
+      #templateContainer #templateColumns .templateColumnContainer .textContainer h2, #templateContainer #templateColumns .templateColumnContainer .textContainer h3, #templateContainer #templateColumns .templateColumnContainer .textContainer h4, #templateContainer #templateColumns .templateColumnContainer .textContainer p, #templateContainer #templateColumns .templateColumnContainer .textContainer ul, #templateContainer #templateColumns .templateColumnContainer .textContainer ol, #templateContainer #templateColumns .templateColumnContainer .textContainer li, #templateContainer #templateColumns .templateColumnContainer .textContainer a {
+        line-height: 150%; }
+      #templateContainer #templateColumns .templateColumnContainer .textContainer p {
+        font-size: 14px; }
 
 .leftColumnContent {
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 150%;
   padding-top: 0;
@@ -218,6 +249,9 @@ h4 {
   padding-left: 3%;
   text-align: left;
   color: #505050; }
+  .leftColumnContent img {
+    display: inline;
+    height: auto; }
   .leftColumnContent a.button:link, .leftColumnContent a.button:visited, .leftColumnContent a.button .yshortcuts {
     font-weight: bold;
     text-decoration: underline;
@@ -231,46 +265,6 @@ h4 {
       background-color: #a00008;
       color: #ffffff;
       padding: 10px; }
-
-.centerColumnContent {
-  font-family: Helvetica;
-  font-size: 14px;
-  line-height: 150%;
-  padding-top: 0;
-  padding-right: 3%;
-  padding-bottom: 20px;
-  padding-left: 3%;
-  text-align: left;
-  color: #505050; }
-  .centerColumnContent a.button:link, .centerColumnContent a.button:visited, .centerColumnContent a.button .yshortcuts {
-    font-weight: normal;
-    text-decoration: underline;
-    color: #eb4102; }
-
-.rightColumnContent {
-  font-family: Helvetica;
-  font-size: 14px;
-  line-height: 150%;
-  padding-top: 0;
-  padding-right: 3%;
-  padding-bottom: 20px;
-  padding-left: 3%;
-  text-align: left;
-  color: #505050; }
-  .rightColumnContent a.button:link, .rightColumnContent a.button:visited, .rightColumnContent a.button .yshortcuts {
-    font-weight: normal;
-    text-decoration: underline;
-    color: #eb4102; }
-
-.leftColumnContent img, .rightColumnContent img {
-  display: inline;
-  height: auto; }
-
-.leftColumnContent .columnImage, .centerColumnContent .columnImage, .rightColumnContent .columnImage {
-  width: 100%;
-  max-width: 100%; }
-.leftColumnContent .date, .centerColumnContent .date, .rightColumnContent .date {
-  max-width: 100%; }
 
 #featured .date {
   max-width: 560px; }
@@ -289,72 +283,12 @@ h4 {
   padding-left: 5%;
   text-align: left;
   color: #808080; }
-  .footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
-    font-weight: normal;
-    text-decoration: none;
-    color: #2A5EB9;
-    line-height: 30px; }
-  .footerContent a.text {
-    border-bottom: #2A5EB9 dotted 2px; }
-
-@media only screen and (max-width: 640px), (max-device-width: 960px) {
-  /*
-  .templateColumnContainer {
-    display: block !important;
-    width: 100% !important;
-  }
-  .columnImage {
-    width: 100% !important;
-    max-width: 560px !important;
-    height: auto !important;
-  }
-  */
-  body, table, td, p, a, li, blockquote {
-    -webkit-text-size-adjust: none !important; }
-  body {
-    width: 100% !important;
-    min-width: 100% !important; }
-  #bodyCell {
-    padding: 10px !important; }
-  #templateContainer {
-    width: 100% !important;
-    max-width: 600px !important; }
-  h1 {
-    font-size: 24px !important;
-    line-height: 100% !important; }
-  h2 {
-    font-size: 20px !important;
-    line-height: 100% !important; }
-  h3 {
-    font-size: 18px !important;
-    line-height: 100% !important; }
-  h4 {
-    font-size: 16px !important;
-    line-height: 100% !important; }
-  #templatePreheader {
-    display: block !important; }
-    #templatePreheader span.logo, #templatePreheader span.share {
-      float: none !important;
-      display: block !important;
-      width: 100% !important; }
-    #templatePreheader span.share {
-      text-align: center;
-      height: 100px; }
-  #headerImage {
-    width: 100% !important;
-    max-width: 600px !important;
-    height: auto !important; }
-  .headerContent {
-    font-size: 20px !important;
-    line-height: 125% !important; }
-  .bodyContent {
-    font-size: 18px !important;
-    line-height: 125% !important; }
-  .leftColumnContent, .centerColumnContent, .rightColumnContent {
-    font-size: 16px !important;
-    line-height: 125% !important; }
-  .footerContent {
-    font-size: 14px !important;
-    line-height: 115% !important; }
-    .footerContent a {
-      display: block !important; } }
+  .footerContent a {
+    font-family: Helvetica, Arial, sans-serif; }
+    .footerContent a:link, .footerContent a:visited, .footerContent a .yshortcuts, .footerContent a span {
+      font-weight: normal;
+      text-decoration: none;
+      color: #2A5EB9;
+      line-height: 30px; }
+    .footerContent a.text {
+      border-bottom: #2A5EB9 dotted 2px; }
